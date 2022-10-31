@@ -7,6 +7,7 @@
   --background-color-hero-footer: #2f303a;
   --main-background-color: #ffffff;
   --backgrount-color-team: #f5f4fa;
+  --backgrount-btn-active: #188ce8;
 }
 /* -----------------BODY------------------------- */
 body {
@@ -23,17 +24,12 @@ li {
 }
 
 .logo {
-  font-family: "Raleway";
-  font-style: normal;
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1923;
   letter-spacing: 0.03em;
   color: var(--blue-color);
-  width: 145px;
-  height: 31px;
-  left: 215px;
-  top: 24px;
   text-decoration-line: none;
 }
 .logo-black {
@@ -41,7 +37,6 @@ li {
 }
 .link {
   color: var(--secondary-text-color);
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428;
@@ -54,20 +49,22 @@ li {
 }
 .site-nav .link-current {
   color: var(--blue-color);
+  text-decoration-line: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.1428;
+  letter-spacing: 0.02em;
 }
-.phone {
+.phone,
+.mail {
   color: var(--primary-text-color);
-  font-family: "Roboto";
   font-weight: 500;
   font-size: 14px;
   line-height: 1.1428;
   letter-spacing: 0.02em;
   text-decoration-line: none;
 }
-.mail {
-  color: var(--blue-color);
-  text-decoration-line: none;
-}
+
 .mail:hover {
   color: var(--blue-color);
 }
@@ -77,8 +74,10 @@ li {
 .site-contacts-item > .mail {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-.phone .mail :hover,
-.phone .mail:focus {
+.phone:focus {
+  color: var(--blue-color);
+}
+.mail:focus {
   color: var(--blue-color);
 }
 /* -----------------------SECTION HERO------------------ */
@@ -95,22 +94,21 @@ li {
 .hero-button {
   color: var(--white-color);
   background-color: var(--blue-color);
-  font-family: "inherit";
+  font-family: inherit;
   font-weight: 700;
-  font-size: 1.875;
-  line-height: 30px;
+  font-size: 16px;
+  line-height: 1.875;
   cursor: pointer;
 }
 .hero-button:hover,
 .hero-button:focus {
-  color: var(--secondary-text-color);
+  background-color: var(--backgrount-btn-active);
 }
 /* ----------------SECTION FEATURES----------------- */
 .features-title {
   display: none;
 }
 .features-subtitle {
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.1428;
   letter-spacing: 0.03em;
@@ -126,7 +124,6 @@ li {
 }
 /* ------------SECTION ACTIVITIES----------------------- */
 .activities-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.1666;
   text-align: center;
@@ -139,7 +136,6 @@ li {
   background-color: var(--backgrount-color-team);
 }
 .team-title {
-  font-weight: 700;
   font-size: 36px;
   line-height: 1.1666;
   text-align: center;
@@ -170,7 +166,7 @@ li {
   background-color: var(--background-color-hero-footer);
 }
 .logo-footer {
-  font-family: "Raleway";
+  font-family: "Raleway", sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.1923;
@@ -195,7 +191,10 @@ li {
 .map-navigation {
   text-decoration-line: none;
 }
-
+.adr-text:hover,
+.adr-text:focus {
+  color: var(--blue-color);
+}
 .address-item > .phone-footer {
   color: var(--footer-text-colors);
   text-decoration: none;
@@ -219,7 +218,6 @@ li {
 }
 .portfolio-btn {
   font-family: inherit;
-  font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.625;
